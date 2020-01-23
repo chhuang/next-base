@@ -1,0 +1,24 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "fileName": false,
+        "displayName": true
+      }
+    ],
+    ["inline-react-svg"],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@root": "./",
+          "@components": "./components"
+        }
+      }
+    ]
+  ]
+}
